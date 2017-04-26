@@ -1,0 +1,12 @@
+F:\PhpTravels\PhpTravelsTests\bin\Debug\PhpTravelsTests.dll
+F:\PhpTravels\PhpTravelsTests\bin\Debug\PhpTravelsTests.pdb
+F:\PhpTravels\PhpTravelsTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\PhpTravels\PhpTravelsTests\bin\Debug\PhpTravels.dll
+F:\PhpTravels\PhpTravelsTests\bin\Debug\WebDriver.dll
+F:\PhpTravels\PhpTravelsTests\bin\Debug\WebDriver.Support.dll
+F:\PhpTravels\PhpTravelsTests\bin\Debug\PhpTravels.pdb
+F:\PhpTravels\PhpTravelsTests\bin\Debug\WebDriver.xml
+F:\PhpTravels\PhpTravelsTests\bin\Debug\WebDriver.Support.xml
+F:\PhpTravels\PhpTravelsTests\obj\Debug\PhpTravelsTests.csprojResolveAssemblyReference.cache
+F:\PhpTravels\PhpTravelsTests\obj\Debug\PhpTravelsTests.dll
+F:\PhpTravels\PhpTravelsTests\obj\Debug\PhpTravelsTests.pdb

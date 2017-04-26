@@ -1,0 +1,9 @@
+F:\PhpTravels\PhpTravels\bin\Debug\PhpTravels.dll
+F:\PhpTravels\PhpTravels\bin\Debug\PhpTravels.pdb
+F:\PhpTravels\PhpTravels\bin\Debug\WebDriver.dll
+F:\PhpTravels\PhpTravels\bin\Debug\WebDriver.Support.dll
+F:\PhpTravels\PhpTravels\bin\Debug\WebDriver.xml
+F:\PhpTravels\PhpTravels\bin\Debug\WebDriver.Support.xml
+F:\PhpTravels\PhpTravels\obj\Debug\PhpTravels.csprojResolveAssemblyReference.cache
+F:\PhpTravels\PhpTravels\obj\Debug\PhpTravels.dll
+F:\PhpTravels\PhpTravels\obj\Debug\PhpTravels.pdb
