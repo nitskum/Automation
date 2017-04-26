@@ -26,6 +26,7 @@ namespace PhpTravelsTests.UITest
         {
             //homePage.ClickDemoLink();
             //homePage.ClickOrderLink();
+			//new comment
             homePage.ClickProductLink();
         }
 
