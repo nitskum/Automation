@@ -3,39 +3,98 @@ using OpenQA.Selenium;
 using PhpTravels.Common;
 using System.Threading;
 
+
 namespace PhpTravels.PageObjects
-{
+{ 
    public class HomePage : Page
     {
+        //Constructor inherting the base class constructor
         public HomePage(Browser browser) : base(browser) { }
-        
+
         //Web Element definitions-->
+        
+        //One way of locating the web element.
+        private By DemoLink = By.CssSelector("div.main-nav-holder a[href*='demo']");
 
-        [FindsBy(How = How.CssSelector, Using = "div.main-nav-holder a[href*='demo']")]
-        public IWebElement DemoLink { get; set; }
-
+        //Other way of locating the web element.
         [FindsBy(How =How.CssSelector, Using = "div.main-nav-holder a[href*='order']")]
         public IWebElement OrderLink { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = "div.main-nav-holder span:contains('Product')")]
+        [FindsBy(How = How.CssSelector, Using = "div.main-nav-holder ul.nav.reset li.has-drop span span")]
         public IWebElement ProductLink { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = "a[href*='documentation']")]
+        public IWebElement DocumentationLink { get; set;}
+
+        [FindsBy(How = How.CssSelector, Using = "a[href*='features']")]
+        public IWebElement FeaturesLink { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = "li a[href*='technology']")]
+        public IWebElement TechnologyLink { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = "li a[href*='requirements']")]
+        public IWebElement RequirementsLink { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = "ul.nav.reset ul.menu.reset li:nth-child(6) a[href*='change-log']")]
+        public IWebElement ChangelogLink { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = "ul.menu.reset li a[href*='updates']")]
+        public IWebElement UpdatesLink { get; set; }
+
+        //------->>>> void methods
         public void ClickDemoLink()
         {
-            Thread.Sleep(1000);
-            DemoLink.Click();
+            Log.Write.Info("Clicking Demo Link");
+            //cumtomized waitAndClick method which includes wait.
+            Wait.WaitAndClick(DemoLink, 10);
         }
 
         public void ClickOrderLink()
         {
-            Thread.Sleep(1000);
+            
             OrderLink.Click();
         }
 
         public void ClickProductLink()
         {
-            Thread.Sleep(1000);
-            ProductLink.Clear();
+            
+            ProductLink.Click();
         }
 
+        public void ClickPro_DocLink()
+        {
+            
+            DocumentationLink.Click();
+        }
+
+        public void ClickPro_FeatureLink()
+        {
+            
+            FeaturesLink.Click();
+        }
+
+        public void ClickPro_TechLink()
+        {
+            
+            TechnologyLink.Click();
+        }
+
+        public void ClickPro_ReqLink()
+        {
+            
+            RequirementsLink.Click();
+        }
+
+        public void ClickPro_ChangelogLink()
+        {
+           
+            ChangelogLink.Click();
+        }
+
+        public void ClickPro_UpdatesLink()
+        {
+            
+            UpdatesLink.Click();
+        }
     }
 }
