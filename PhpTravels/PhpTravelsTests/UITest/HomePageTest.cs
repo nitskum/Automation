@@ -34,27 +34,56 @@ namespace PhpTravelsTests.UITest
         [TestMethod]
         public void User_Go_To_DocumentationPage()
         {
+            homePage.ClickProductLink();
             homePage.ClickPro_DocLink();
         }
         [TestMethod]
         public void User_Go_To_FeaturesPage()
         {
+            homePage.ClickProductLink();
             homePage.ClickPro_FeatureLink();
         }
         [TestMethod]
         public void User_Go_To_TechnologyPage()
         {
+            homePage.ClickProductLink();
             homePage.ClickPro_TechLink();
         }
         [TestMethod]
         public void User_Go_To_RequirementsPage()
         {
+            homePage.ClickProductLink();
             homePage.ClickPro_ReqLink();
         }
         [TestMethod]
         public void User_Go_To_ChangelogPage()
         {
+            homePage.ClickProductLink();
             homePage.ClickPro_ChangelogLink();
+        }
+        [TestMethod]
+        public void User_Go_To_UpdatePage()
+        {
+            homePage.ClickProductLink();
+            homePage.ClickPro_UpdatesLink();
+        }
+        [TestMethod]
+        public void User_Go_To_DesktopAppPage()
+        {
+            homePage.ClickProductLink();
+            homePage.ClickPro_DesktopAppLink();
+        }
+        [TestMethod]
+        public void User_Go_To_MobileAppPage()
+        {
+            homePage.ClickProductLink();
+            homePage.ClickPro_MobileAppLink();
+        }
+        [TestMethod]
+        public void User_Go_To_HowToStartPage()
+        {
+            homePage.ClickProductLink();
+            homePage.ClickPro_HowToStartLink();
         }
         [TestCleanup]
         public void Teardown()

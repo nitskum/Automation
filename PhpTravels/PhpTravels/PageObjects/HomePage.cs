@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium;
 using PhpTravels.Common;
-using System.Threading;
 
 
 namespace PhpTravels.PageObjects
@@ -18,6 +17,7 @@ namespace PhpTravels.PageObjects
 
         //Other way of locating the web element.
         [FindsBy(How =How.CssSelector, Using = "div.main-nav-holder a[href*='order']")]
+        
         public IWebElement OrderLink { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "div.main-nav-holder ul.nav.reset li.has-drop span span")]
@@ -40,6 +40,15 @@ namespace PhpTravels.PageObjects
 
         [FindsBy(How = How.CssSelector, Using = "ul.menu.reset li a[href*='updates']")]
         public IWebElement UpdatesLink { get; set; }
+
+        [FindsBy(How= How.CssSelector, Using = "ul.menu.reset li a[href*='desktop']")]
+        public IWebElement DesktopAppLink { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = "ul.menu.reset li a[href*='mobile']")]
+        public IWebElement MobileAppLink { get; set; }
+
+        [FindsBy(How =How.CssSelector, Using = "ul.menu.reset li a[href*='how-to-get-started']")]
+        public IWebElement HowToStartLink { get; set; }
 
         //------->>>> void methods
         public void ClickDemoLink()
@@ -95,6 +104,20 @@ namespace PhpTravels.PageObjects
         {
             
             UpdatesLink.Click();
+        }
+        public void ClickPro_DesktopAppLink()
+        {
+            DesktopAppLink.Click();
+        }
+
+        public void ClickPro_MobileAppLink()
+        {
+            MobileAppLink.Click();
+        }
+
+        public void ClickPro_HowToStartLink()
+        {
+            HowToStartLink.Click();
         }
     }
 }
